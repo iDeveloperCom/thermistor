@@ -53,5 +53,7 @@ The connection of BME280 is shown in the following picture. Pay attention, the P
 
 ![alt text](https://github.com/iDeveloperCom/thermistor/blob/master/lora.png "TTGO LoRa")
 
+![alt text](https://github.com/iDeveloperCom/thermistor/blob/master/IMG_0430.png "Full mounted body")
+
 
 
