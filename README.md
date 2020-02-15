@@ -49,5 +49,9 @@ The stl files of my part is under the source code. You should process them with 
 
 
 
+The connection of BME280 is shown in the following picture. Pay attention, the Ports are what I have choosen.
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 
 
