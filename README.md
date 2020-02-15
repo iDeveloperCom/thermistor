@@ -23,7 +23,10 @@ This is the part, where the wind and temperature values recorded and transmitted
 Also important are the *LoRa* parameters
 
 //LoRa Parameters
-#define SECRET  "put here your own secret" . with this secret you can distinguish from other users on the filed, who might have the same system.
-#define BAND    866E6 this defines the 8gg MHz operation for the European terrotory. You can set this according to your needs to other values. Be sure that your system supports the frequency.
+#define SECRET  "put here your own secret"
+with this secret you can distinguish from other users on the filed, who might have the same system.
+
+#define BAND    866E6 
+this defines the 8gg MHz operation for the European terrotory. You can set this according to your needs to other values. Be sure that your system supports the frequency.
 
 
