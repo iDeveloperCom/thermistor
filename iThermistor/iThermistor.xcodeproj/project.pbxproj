@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4038E36A2223179200CFA1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038E3692223179200CFA1FF /* AppDelegate.swift */; };
+		4038E3712223179300CFA1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4038E3702223179300CFA1FF /* Assets.xcassets */; };
+		4038E3742223179300CFA1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4038E3722223179300CFA1FF /* LaunchScreen.storyboard */; };
+		403AF5DA23E638590042D686 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403AF5D923E638580042D686 /* Charts.framework */; };
+		403AF5DB23E638590042D686 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 403AF5D923E638580042D686 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		403AF5DD23E73B3E0042D686 /* AverageBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AF5DC23E73B3E0042D686 /* AverageBuffer.swift */; };
+		40CB73CC222F40B5009E6D05 /* BLECentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CB73CB222F40B5009E6D05 /* BLECentralViewController.swift */; };
+		40CB73CE222F40C1009E6D05 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CB73CD222F40C0009E6D05 /* PeripheralTableViewCell.swift */; };
+		40CB73D0222F40CA009E6D05 /* UUIDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CB73CF222F40CA009E6D05 /* UUIDKey.swift */; };
+		40CB73D4222F4103009E6D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CB73D3222F4103009E6D05 /* Main.storyboard */; };
+		40CB73D6222F414A009E6D05 /* UartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CB73D5222F414A009E6D05 /* UartModuleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40099CF12235C32C0095FAAE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				403AF5DB23E638590042D686 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4038E3662223179200CFA1FF /* iThermistor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThermistor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4038E3692223179200CFA1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4038E3702223179300CFA1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4038E3732223179300CFA1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4038E3752223179300CFA1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403AF5D923E638580042D686 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		403AF5DC23E73B3E0042D686 /* AverageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBuffer.swift; sourceTree = "<group>"; };
+		409880F0222320A600E87A0A /* iThermistor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iThermistor.entitlements; sourceTree = "<group>"; };
+		40CB73CB222F40B5009E6D05 /* BLECentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECentralViewController.swift; sourceTree = "<group>"; };
+		40CB73CD222F40C0009E6D05 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		40CB73CF222F40CA009E6D05 /* UUIDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDKey.swift; sourceTree = "<group>"; };
+		40CB73D3222F4103009E6D05 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		40CB73D5222F414A009E6D05 /* UartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartModuleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4038E3632223179200CFA1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403AF5DA23E638590042D686 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4038E35D2223179200CFA1FF = {
+			isa = PBXGroup;
+			children = (
+				4038E3682223179200CFA1FF /* iThermistor */,
+				4038E3672223179200CFA1FF /* Products */,
+				409880ED222320A600E87A0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4038E3672223179200CFA1FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4038E3662223179200CFA1FF /* iThermistor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4038E3682223179200CFA1FF /* iThermistor */ = {
+			isa = PBXGroup;
+			children = (
+				409880F1222321B300E87A0A /* Resources */,
+				4038E3692223179200CFA1FF /* AppDelegate.swift */,
+				40CB73CB222F40B5009E6D05 /* BLECentralViewController.swift */,
+				40CB73CD222F40C0009E6D05 /* PeripheralTableViewCell.swift */,
+				40CB73CF222F40CA009E6D05 /* UUIDKey.swift */,
+				40CB73D5222F414A009E6D05 /* UartModuleViewController.swift */,
+				403AF5DC23E73B3E0042D686 /* AverageBuffer.swift */,
+			);
+			path = iThermistor;
+			sourceTree = "<group>";
+		};
+		409880ED222320A600E87A0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403AF5D923E638580042D686 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		409880F1222321B300E87A0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40CB73D3222F4103009E6D05 /* Main.storyboard */,
+				4038E3722223179300CFA1FF /* LaunchScreen.storyboard */,
+				4038E3752223179300CFA1FF /* Info.plist */,
+				4038E3702223179300CFA1FF /* Assets.xcassets */,
+				409880F0222320A600E87A0A /* iThermistor.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4038E3652223179200CFA1FF /* iThermistor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4038E3782223179300CFA1FF /* Build configuration list for PBXNativeTarget "iThermistor" */;
+			buildPhases = (
+				4038E3622223179200CFA1FF /* Sources */,
+				4038E3632223179200CFA1FF /* Frameworks */,
+				4038E3642223179200CFA1FF /* Resources */,
+				40099CF12235C32C0095FAAE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iThermistor;
+			productName = iThermistor;
+			productReference = 4038E3662223179200CFA1FF /* iThermistor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4038E35E2223179200CFA1FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Can Tezcan";
+				TargetAttributes = {
+					4038E3652223179200CFA1FF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4038E3612223179200CFA1FF /* Build configuration list for PBXProject "iThermistor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4038E35D2223179200CFA1FF;
+			productRefGroup = 4038E3672223179200CFA1FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4038E3652223179200CFA1FF /* iThermistor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4038E3642223179200CFA1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CB73D4222F4103009E6D05 /* Main.storyboard in Resources */,
+				4038E3742223179300CFA1FF /* LaunchScreen.storyboard in Resources */,
+				4038E3712223179300CFA1FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4038E3622223179200CFA1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CB73D0222F40CA009E6D05 /* UUIDKey.swift in Sources */,
+				40CB73CC222F40B5009E6D05 /* BLECentralViewController.swift in Sources */,
+				4038E36A2223179200CFA1FF /* AppDelegate.swift in Sources */,
+				40CB73D6222F414A009E6D05 /* UartModuleViewController.swift in Sources */,
+				40CB73CE222F40C1009E6D05 /* PeripheralTableViewCell.swift in Sources */,
+				403AF5DD23E73B3E0042D686 /* AverageBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4038E3722223179300CFA1FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4038E3732223179300CFA1FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4038E3762223179300CFA1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4038E3772223179300CFA1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4038E3792223179300CFA1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XHQ2T8MEZL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iThermistor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.i-developer.ithermistor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Freeflight Thermistor Developer";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4038E37A2223179300CFA1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XHQ2T8MEZL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = iThermistor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.i-developer.ithermistor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Freeflight Thermistor Appstore";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4038E3612223179200CFA1FF /* Build configuration list for PBXProject "iThermistor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4038E3762223179300CFA1FF /* Debug */,
+				4038E3772223179300CFA1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4038E3782223179300CFA1FF /* Build configuration list for PBXNativeTarget "iThermistor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4038E3792223179300CFA1FF /* Debug */,
+				4038E37A2223179300CFA1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4038E35E2223179200CFA1FF /* Project object */;
+}
