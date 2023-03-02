@@ -1,4 +1,4 @@
-# thermistor
+# thermistor -- DEPRECATED AND NOT MAINTAINED --
 # Free Flight Thermal Detector
 
 This system is utilizing the TTGO LoRa BLE Esp32 boards. 2 is without the OLED display, 1 with OLED display. From the company froggit using the wind sensor spare part (propeller with reed relay, any other would also work) and 2 pieces BME280 I2C breakout boards.
